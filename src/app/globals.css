@@ -237,3 +237,49 @@ input:checked + .slider:before {
     border-left-color: var(--primary-color); /* Use primary color for spinner in dark mode too */
   }
 }
+
+.assembly-map-container {
+  height: 60vh;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .header-controls {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .store-buttons {
+    justify-content: flex-start;
+  }
+
+  .assembly-map-container {
+    height: 40vh;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+
+  .assembly-table th.optional-column,
+  .assembly-table td.optional-column {
+    display: none;
+  }
+}

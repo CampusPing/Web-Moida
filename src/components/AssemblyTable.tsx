@@ -32,30 +32,32 @@ const formatPeopleCount = (count: number) => {
 
 const AssemblyTable: React.FC<Props> = ({ assemblies, onRowClick }) => {
   return (
-    <table className="assembly-table">
-      <thead>
-        <tr>
-          <th>자치구</th>
-          <th>행정동</th>
-          <th>시작 시간</th>
-          <th>종료 시간</th>
-          <th>장소</th>
-          <th>예상 인원</th>
-        </tr>
-      </thead>
-      <tbody>
-        {assemblies.filter(Boolean).map((assembly) => (
-          <tr key={assembly.id} onClick={() => onRowClick(assembly.id)}>
-            <td>{assembly.districtName}</td>
-            <td>{assembly.dong}</td>
-            <td>{formatTime(assembly.startDateTime)}</td>
-            <td>{formatTime(assembly.endDateTime)}</td>
-            <td>{assembly.place}</td>
-            <td>{formatPeopleCount(assembly.peopleCount)}</td>
+    <div className="table-container">
+      <table className="assembly-table">
+        <thead>
+          <tr>
+            <th>자치구</th>
+            <th className="optional-column">행정동</th>
+            <th>시작 시간</th>
+            <th className="optional-column">종료 시간</th>
+            <th>장소</th>
+            <th>예상 인원</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {assemblies.filter(Boolean).map((assembly) => (
+            <tr key={assembly.id} onClick={() => onRowClick(assembly.id)}>
+              <td>{assembly.districtName}</td>
+              <td className="optional-column">{assembly.dong}</td>
+              <td>{formatTime(assembly.startDateTime)}</td>
+              <td className="optional-column">{formatTime(assembly.endDateTime)}</td>
+              <td>{assembly.place}</td>
+              <td>{formatPeopleCount(assembly.peopleCount)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

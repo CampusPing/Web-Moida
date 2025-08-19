@@ -156,7 +156,7 @@ const AssemblyMap: React.FC<Props> = ({ assemblies, selectedAssemblyId }) => {
     }
   }, [selectedAssemblyId, assemblies]); // Add assemblies to dependency array
 
-  return <div ref={mapDivRef} style={{ width: '100%', height: '60vh' }} />;
+  return <div className="assembly-map-container"><div ref={mapDivRef} style={{ width: '100%', height: '100%' }} /></div>;
 };
 
 export default AssemblyMap;
