@@ -106,13 +106,16 @@ export default function Home() {
             <h1>오늘의집회</h1>
           </div>
           <div className="header-controls">
-            <div className="store-buttons">
-              <a href="https://play.google.com/store/apps/details?id=com.campus.moida&hl=ko" target="_blank" rel="noopener noreferrer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" className="store-button-img" />
-              </a>
-              <a href="https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%9D%98%EC%A7%91%ED%9A%8C-%EC%B4%9B%EB%B6%88-%EC%9D%BC%EC%A0%95-%EC%B2%B4%ED%81%AC-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EA%B9%8C%EC%A7%80/id6747088162" target="_blank" rel="noopener noreferrer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="store-button-img" />
-              </a>
+            <div>
+              <div className="store-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.campus.moida&hl=ko" target="_blank" rel="noopener noreferrer">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" className="store-button-img" />
+                </a>
+                <a href="https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%9D%98%EC%A7%91%ED%9A%8C-%EC%B4%9B%EB%B6%88-%EC%9D%BC%EC%A0%95-%EC%B2%B4%ED%81%AC-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EA%B9%8C%EC%A7%80/id6747088162" target="_blank" rel="noopener noreferrer">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="store-button-img" />
+                </a>
+              </div>
+              <p className="header-cta">모바일 앱에서 더 다양한 정보를 편하게 즐겨보세요!</p>
             </div>
             <div className="toggle-switch-container">
               <span className={showOnlyOngoing ? 'active' : ''}>진행 중인 집회만 보기</span>

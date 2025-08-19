@@ -242,6 +242,17 @@ input:checked + .slider:before {
   height: 60vh;
 }
 
+.header-cta {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {

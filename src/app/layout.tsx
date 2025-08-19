@@ -6,14 +6,14 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.todaysassembly.com'), // Add this line
+  metadataBase: new URL('https://todayab.netlify.app/'), // Add this line
   title: '오늘의집회 - 실시간 집회 정보',
   description: '서울시 실시간 집회 및 시위 정보를 한눈에 확인하세요. 지도와 테이블로 제공되는 최신 집회 정보를 통해 오늘의 집회 일정을 파악할 수 있습니다.',
   keywords: ['오늘의집회', '집회정보', '시위정보', '서울시 집회', '실시간 집회', '집회 일정', '광화문 집회', '여의도 집회'],
   openGraph: {
     title: '오늘의집회 - 실시간 집회 정보',
     description: '서울시 실시간 집회 및 시위 정보를 한눈에 확인하세요. 지도와 테이블로 제공되는 최신 집회 정보를 통해 오늘의 집회 일정을 파악할 수 있습니다.',
-    url: 'https://www.todaysassembly.com', // Replace with actual domain
+    url: 'https://todayab.netlify.app/', // Replace with actual domain
     siteName: '오늘의집회',
     images: [
       {
