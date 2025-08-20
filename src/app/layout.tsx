@@ -47,6 +47,7 @@ export default function RootLayout({
     <html lang="ko">
       <head>
         <meta name="google-site-verification" content="KUb9P5ywgJIii8tbC0CJyrDfXZIpLj_setashmMWO_E" />
+        <meta name="naver-site-verification" content="5a08aba36d68e4bcee1ed9432248f5bbe4a19841" />
         <Script
           strategy="beforeInteractive"
           src={`https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${process.env.NEXT_PUBLIC_NAVER_MAP_CLIENT_ID}`}
